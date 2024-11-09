@@ -1,0 +1,179 @@
+@media (min-width: 992px) {
+  .articles-list {
+    max-width: 640px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 24px 20px 21px;
+  }
+
+  .header__logo-img {
+    max-width: 217px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    display: none;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    padding: 20px 24px;
+    margin: 0;
+    display: block;
+  }
+
+  .nav a:hover {
+    background-color: #efecec;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav {
+    display: block;
+  }
+
+  .nav a.active::after {
+    display: none;
+  }
+
+  .slider__img {
+    min-width: 100%;
+  }
+
+  .articles-list {
+    max-width: 640px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 24px 20px 21px;
+  }
+
+  .header__logo-img {
+    max-width: 217px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    display: none;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    padding: 20px 24px;
+    margin: 0;
+    display: block;
+  }
+
+  .nav a:hover {
+    background-color: #efecec;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav {
+    display: block;
+  }
+
+  .nav a.active::after {
+    display: none;
+  }
+
+  .slider {
+    padding: 52px 0 32px;
+  }
+
+  .slider__title {
+    font-size: 36px;
+    line-height: 42.96px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .slider__desc {
+    font-size: 16px;
+    line-height: 27.2px;
+    padding: 0 20px;
+  }
+
+  hr {
+    min-width: 100%;
+  }
+
+  .heading {
+    font-size: 32px;
+    line-height: 38.19px;
+  }
+
+  .all-articles {
+    padding-bottom: 40px;
+  }
+
+  .articles-list {
+    grid-template-columns: repeat(1, minmax(304px, 1fr));
+    padding: 0 20px;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  .article-item {
+    margin-bottom: 42px;
+  }
+
+  .footer {
+    padding: 22px 0 103px;
+  }
+
+  .footer-links {
+    font-size: 16px;
+    left: -330px;
+  }
+
+  .footer-logo {
+    font-size: 22px;
+    margin: 103px 0 25px;
+  }
+
+  .footer-desc {
+    font-size: 13px;
+    padding: 0 44px;
+  }
+
+  .footer-social a {
+    font-size: 13px;
+    line-height: 22.1px;
+  }
+
+  .footer-allright {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,235 @@
+@import url("https://fonts.cdnfonts.com/css/new-york-extra-large");
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+
+  /* font family */
+  --font-primary: "New York Small", sans-serif;
+  --font-secondary: "New York Extra Large", sans-serif;
+  --font-tertiary: "SF Mono", sans-serif;
+  --font-heading: "SF Pro Display", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px 61px 40px 63px;
+  background-color: var(--bg-color);
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.16);
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  font-size: 20px;
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 31px;
+  text-decoration: none;
+  letter-spacing: 4px;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -52px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-color);
+  display: none;
+}
+
+.nav a.active::after {
+  display: block;
+}
+
+.menu-toggle,
+.menu-icon {
+  display: none;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 76px 0 34px;
+  text-align: center;
+}
+
+.slider__image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 44px;
+}
+
+.slider__title {
+  font-size: 54px;
+  line-height: 54px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  font-family: var(--font-secondary);
+  max-width: 858px;
+}
+
+.slider__desc {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+  max-width: 592px;
+  color: var(--text-color);
+  font-family: var(--font-tertiary);
+}
+
+hr {
+  max-width: 640px;
+  margin: 0 auto 64px;
+  border: 1px solid var(--text-color);
+}
+
+/* All Articles Section */
+.all-articles {
+  padding-bottom: 77px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 52.51px;
+  margin-bottom: 39px;
+  font-family: var(--font-secondary);
+}
+
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(304px, 1fr));
+  gap: 28px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.article-item {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.article-item img {
+  width: 100%;
+  height: auto;
+}
+
+.article-item h4 {
+  max-width: 262px;
+  margin: auto;
+  font-size: 22px;
+  margin-top: 20px;
+  line-height: 26.4px;
+  font-weight: 500;
+  font-family: var(--font-heading);
+}
+
+/* Footer */
+.footer {
+  padding: 18px 0 32px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  text-align: center;
+}
+
+.footer-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.footer-links {
+  display: inline-block;
+  font-size: 20px;
+  font-family: var(--font-heading);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  left: -5px;
+}
+
+.footer-links span {
+  font-weight: 800;
+}
+
+.footer-links__design {
+  margin: 0 8px 0 10px;
+}
+
+.footer-links-creat {
+  margin: 0 6px 0 4px;
+}
+
+.footer-links-suspense {
+  margin: 0 8px 0 8px;
+}
+
+.footer-logo {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  font-family: var(--font-primary);
+  margin: 105px 0 25px;
+}
+
+.footer-desc {
+  font-size: 16px;
+  max-width: 488px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin: 0 auto 32px;
+  font-family: var(--font-primary);
+  color: #ebebeb;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+  margin-bottom: 64px;
+}
+
+.footer-social a {
+  font-size: 16px;
+  line-height: 27.2px;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: var(--bg-color);
+}
+
+.footer-allright {
+  font-size: 12px;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 16.8px;
+}
